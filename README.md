@@ -6,7 +6,7 @@ This project develops a deep learning model for predicting the next word in a gi
 
 ## Features
 
-- **Data Collection**: Utilizes texts from Shakespeare's works (Hamlet, Macbeth, Julius Caesar) and other classic literature as the training dataset.
+- **Data Collection**: Utilizes texts from Shakespeare's works (Hamlet, Macbeth, Julius Caesar), Jane Austen's novels (Emma, Sense and Sensibility, Persuasion), John Milton's Paradise Lost, and Herman Melville's Moby Dick from the NLTK Gutenberg corpus as the training dataset.
 - **Data Preprocessing**: Tokenizes text, creates input sequences, and pads them for uniform input lengths.
 - **Model Architecture**: Employs an LSTM-based neural network with embedding layers, dropout for regularization, and a softmax output layer.
 - **Training**: Includes early stopping to prevent overfitting and validation on a test set.
@@ -17,8 +17,8 @@ This project develops a deep learning model for predicting the next word in a gi
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
-   cd next-word-predictor-using-lstm-rnn
+   git clone https://github.com/atulkanttiwari/Next_Word_Predictor_UsingLSTM
+   cd Next_Word_Predictor_UsingLSTM
    ```
 
 2. Install dependencies:
@@ -40,6 +40,10 @@ streamlit run app.py
 ```
 
 Open your browser and navigate to the provided local URL. Enter a sequence of words in the input field and click "Predict Next Word" to see the model's prediction.
+
+## Live Demo
+
+You can try the deployed version of the application here: [Next Word Predictor Using LSTM](https://nextwordpredictorusinglstm-9jyzappeeejr877gcj7mrnv.streamlit.app/)
 
 ## Dependencies
 
@@ -70,7 +74,7 @@ Open your browser and navigate to the provided local URL. Enter a sequence of wo
 - `app.py`: Streamlit application for next word prediction.
 - `experiemnts.ipynb`: Jupyter notebook containing data preprocessing, model training, and evaluation.
 - `requirements.txt`: Python dependencies.
-- `hamlet.txt`: Combined text corpus from Shakespeare's works.
+- `hamlet.txt`: Combined text corpus from Shakespeare's works and other classic literature.
 - `next_word_lstm.keras`: Trained LSTM model.
 - `tokenizer.pickle`: Pickled tokenizer for text processing.
 
